@@ -2,3 +2,4 @@
 .env.*
 __pycache__/
 *.py[cod]
+03_langchain入门实战FastApi/app/db/

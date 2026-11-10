@@ -1,0 +1,13 @@
+{
+    "dependencies": [
+        "./02_langchain入门实战/app",
+        "langchain",
+        "langchain-openai",
+        "langchain-tavily",
+        "python-dotenv"
+    ],
+    "graphs": {
+        "chief_agent": "./02_langchain入门实战/app/agents/personal_chief.py:agent"
+    },
+    "env": "./02_langchain入门实战/.env"
+}
