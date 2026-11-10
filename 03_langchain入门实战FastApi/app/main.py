@@ -1,5 +1,5 @@
 import os
-
+import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -54,6 +54,5 @@ async def serve_frontend(path: str):
     return {"message": "你的独家私厨上线了~", "status": "ok"}
 
 if __name__ == "__main__":
-    import uvicorn
     # 启动命令：python -m app.main
     uvicorn.run("app.main:app", host="127.0.0.1", port=8001, reload=True)
