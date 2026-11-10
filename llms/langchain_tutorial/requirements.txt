@@ -1,0 +1,18 @@
+langchain==0.1.20
+# DeepSeek 使用 OpenAI 兼容接口
+pypdf
+aiofiles
+# SemanticChunker
+langchain_experimental
+faiss-cpu
+rank_bm25
+langchain_chroma
+lark
+# Notebook 中直接使用的包；langchain-openai 需匹配 langchain 0.1.x
+langchain-openai==0.1.7
+openai<2
+scikit-learn
+fastembed==0.8.0
+ipykernel
+# langchain-core 0.1.x 需要 packaging<24
+wheel<0.44

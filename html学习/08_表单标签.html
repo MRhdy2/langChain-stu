@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本框，密码框，复选框</title>
+</head>
+<body>
+      <!--
+          单选效果：
+                  1.相同一组的radio才能单选。
+                  2.设置相同的name属性值
+          form
+               作用：将页面输入的数据提交到后台或指定界面
+               属性：
+                    action： 指定将数据提交到那个页面
+                    get：
+                        1.参数url明文现实
+                        2.提交速度快
+                        3.提交参数有长度限制
+                    post：
+                        1.非明文显示
+                        2.提交速度慢
+                        3.提交参数的长度无限制
+       -->
+      <form action="09_数据接收页面.html" method="post">
+                用户名：<input type="text" name="username">
+                <br>
+                密码：<input type="password" name="password">
+                <p></p>
+                性别：<input type="radio" name="one">男
+                <input type="radio" name="one">女
+                <br>
+                您的爱好：
+                <br>
+                <input type="checkbox">挣钱
+                <br>
+                <input type="checkbox">吃饭
+                <br>
+                <input type="checkbox">运动
+                <br>
+                <input type="checkbox">买车
+                <br>
+                <!--
+                  测试点：统一使用value进行赋值
+                  提示：普通按钮默认没有执行效果，需要配置js来实现
+                -->
+                <input type="submit" value="提交">
+                <input type="reset" value="重置">
+                <input type="button" value="点完试试" onclick="alert('点我干啥')">
+      </form>
+
+</body>
+</html>
