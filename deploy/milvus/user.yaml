@@ -1,0 +1,14 @@
+credential:
+  dashscope_apikey:
+    apikey: sk-ws-H.YPYYYPE.pah3.MEUCIBLxeK-bw97bQDcakhHPYq0tM6tNtV7aq-daJJZKKxM_AiEAqboGEhMeV-P61MZdRYN3UpnOjVk7p_vn8nPkLqZhRmA
+function:
+  rerank:
+    model:
+      providers:
+        ali:
+          credential: dashscope_apikey
+          # url: https://dashscope.aliyuncs.com/api/v1/services/rerank/text-rerank/text-rerank
+  textEmbedding:
+    providers:
+      dashscope:
+        credential: dashscope_apikey
